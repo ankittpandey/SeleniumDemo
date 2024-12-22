@@ -18,7 +18,7 @@ public class ExplicitWait {
     @BeforeMethod
     public void setup(){
         cp=new ChromeOptions();
-        //cp.addArguments("--headless");
+        cp.addArguments("--headless");
         cp.addArguments("--disable-gpu");
         cp.addArguments("--no-sandbox");
         driver=new ChromeDriver(cp);
