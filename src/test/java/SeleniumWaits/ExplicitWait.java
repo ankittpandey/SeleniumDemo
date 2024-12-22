@@ -18,13 +18,13 @@ public class ExplicitWait {
     @BeforeMethod
     public void setup(){
         cp=new ChromeOptions();
-        cp.addArguments("--headless");
+        //cp.addArguments("--headless");
         cp.addArguments("--disable-gpu");
         cp.addArguments("--no-sandbox");
         driver=new ChromeDriver(cp);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-        driver.get("file:///C:/Users/2340824/Downloads/ExplicitWait.html");
+        driver.get("file:///C:/Users/2340824/IdeaProjects/SeleniumDemo/ExplicitWait.html");
     }
     @AfterMethod
     public void finish(){

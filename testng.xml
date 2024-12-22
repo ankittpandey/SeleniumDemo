@@ -4,7 +4,7 @@
     <parameter name="browser" value="chrome" />
     <test preserve-order="true" name="Test Waits">
         <classes>
-            <class name="SeleniumWaits.ExplicitWait" />
+            <class name="SeleniumIntro.SeleniumFirstDemo" />
         </classes>
     </test>
 </suite>

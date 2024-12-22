@@ -22,14 +22,14 @@ public class SeleniumFirstDemo {
     @BeforeMethod
     public void LaunchBrowser(String browser){
         if(browser.equalsIgnoreCase("firefox")) {
-            FirefoxOptions options = new FirefoxOptions();
+            //FirefoxOptions options = new FirefoxOptions();
 
-            ProfilesIni profiles = new ProfilesIni();
-            FirefoxProfile ffprofile = profiles.getProfile("TestUser");
+            //ProfilesIni profiles = new ProfilesIni();
+            //FirefoxProfile ffprofile = profiles.getProfile("TestUser");
 
-            ffprofile.setPreference("dom.webnotifications.enabled", false);
-            ffprofile.setAcceptUntrustedCertificates(true);
-            ffprofile.setAssumeUntrustedCertificateIssuer(false);
+            //ffprofile.setPreference("dom.webnotifications.enabled", false);
+            //ffprofile.setAcceptUntrustedCertificates(true);
+            //ffprofile.setAssumeUntrustedCertificateIssuer(false);
 
 
             // Use proxy
@@ -39,8 +39,9 @@ public class SeleniumFirstDemo {
 			ffprofile.setPreference("network.proxy.socks_port", 8080);
 			*/
 
-            options.setProfile(ffprofile);
-            driver = new FirefoxDriver(options);
+            //options.setProfile(ffprofile);
+            //driver = new FirefoxDriver(options);
+            driver = new FirefoxDriver();
         }
         else {
             ChromeOptions options = new ChromeOptions();
