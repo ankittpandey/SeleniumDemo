@@ -69,7 +69,6 @@ public class SeleniumFirstDemo {
         driver.get("https://www.facebook.com/");
         String title = driver.getTitle();
         Assert.assertEquals(title,"Log in to Facebook");
-        Thread.sleep(3000);
     }
 
     @Test
@@ -79,7 +78,6 @@ public class SeleniumFirstDemo {
         driver.get("https://toolsqa.com/");
         String title = driver.getTitle();
         Assert.assertEquals(title,"Tools QA");
-        Thread.sleep(3000);
     }
 
     @AfterMethod
