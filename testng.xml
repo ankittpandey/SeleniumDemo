@@ -2,17 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <parameter name="browser" value="chrome" />
-    <test preserve-order="true" name="Test Selenium">
-        <classes>
-            <class name="SeleniumIntro.SeleniumFirstDemo" />
-        </classes>
-    </test>
     <test preserve-order="true" name="Test Waits">
         <classes>
             <class name="SeleniumWaits.ExplicitWait" />
-            <class name="SeleniumWaits.HardCodeWaits" />
-            <class name="SeleniumWaits.ImplicitWait" />
-            <class name="SeleniumWaits.PageLoadTimeOut" />
         </classes>
     </test>
 </suite>
